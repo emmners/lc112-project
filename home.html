@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>LC112 Final Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("bu.png");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#housing" class="w3-button w3-block w3-black">HOUSING</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#todo" class="w3-button w3-block w3-black">TO DO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#toknow" class="w3-button w3-block w3-black">TO KNOW</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Commonwealth Ave, Boston, MA 02215</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">欢迎<br>中国学生来到BU</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">朱美莲</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="housing">
+  <div class="w3-content" style="max-width:700px">
+    <p>我喜欢波士顿大学，因为大学有很多活动。我每天都很忙！我觉得看比赛很有意思。波士顿大学的运动真的很好。波士顿大学的冰棍球真好，所以你应该看比赛。我也喜欢我所有的课，可是我有太多的功课。我常说”做完了所有的功课以后再玩”。你要复习，因为期中考试和期末试很难。</p>
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">租公寓</span></h5>
+    <p>一个宿舍比公寓很近上课。可是，宿舍比公寓很便宜。如果你住在波士顿大学的公寓（ex. Stuvi），他比公寓很贵。你可以看找一个公寓被上网。很多波士顿大学学生发他的公寓。常常学生谁有一套公寓住在Allston或者Fenway。Allston有很多饭馆的中国菜。Fenway很近Newbury Street和公园的Fenway。学生谁住在Allston他们开绿色火车上课。学生谁住在Fenway走去上课。如果你搬家，你常常住在跟一或者两个同屋，因为波士顿很贵。</p>
+    <img src="bu.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide"><p>宿舍/地方的学习</p></span></h5>
+      <div class="w3-row w3-center w3-card w3-padding">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+          <div class="w3-col s6 tablink">宿舍</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+          <div class="w3-col s6 tablink">地方的学习</div>
+        </a>
+      </div>
+  
+      <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Warren Towers</h5>
+        <p class="w3-text-grey">我喜欢Warren Towers，因为我住在Warren Towers。我喜欢我的宿舍，很舒服。Warren Towers 在波士顿大学的中心，所以我的课不太远。Warren Towers也有一个餐厅！虽然，我的宿舍真小。一些学生住在Warren Towers和三个人一起，因为有的时候很吵。
+        </p><br>
+      
+        <h5>Towers</h5>
+        <p class="w3-text-grey">Towers是宿舍，没有餐厅。Towers很近Marcianos，和Marcianos很好吃。Towers有一个Nintendo Switch，所以你可以玩游戏（Mario Kart, Super Smash Bros)。</p><br>
+      
+        <h5>West Campus</h5>
+        <p class="w3-text-grey">West和Warren Towers一样，可是West太西了。West也有一个餐厅。他很近Allston，所以晚上学生常常去Allston吃饭。</p><br>
+      </div>
+  
+      <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+        <h5>Theology 图书馆</h5>
+        <p class="w3-text-grey">我喜欢在Theology图书馆做功课，因为那儿人不多，从Warren Towers 到Theology 图书馆不太远。Theology图书馆比Mugar图书馆安静。中午我不去Mugar图书馆，图书馆没有位子，很多人。很多学生会都去图书馆下课后。</p><br>
+<!--       
+        <h5>Mugar 图书馆</h5>
+        <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+      
+        <h5>CDS</h5>
+        <p class="w3-text-grey">Whiskey and coffee 5.00</p><br> -->
+      </div>  
+      <img src="cds.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+    </div>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="todo">
+  <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">去的地方</span></h5>
+  <div class="w3-content" style="max-width:700px">
+    <p>每个星期我都走到Charles River Esplanade，常常晚上我跟我朋友在那儿走走，因为我们喜欢运动和聊天。我也喜欢去波士顿公园。去年秋天，我去了波士顿公园。这个公园又大又漂亮。公园有一个女人，她画了很多人。他们不用付钱给她，因为这是慈善。她说“你想付多少钱都可以“。我认识很多朋友，因为我喜欢在上课以前跟大家聊天。所以，我可以约同学一起准备考试或者吃中饭。我喜欢去社团，波士顿大学有多社团。我常常去电脑社团，一边学习，一边玩游戏。</p>
+
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">波士顿的天气</span></h5>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p>波士顿的冬天很冷。你要穿外套。今年，波士顿下了一点儿雪。。我想跟我的朋友去滑冰和滑雪。波士顿的秋天冷一点。我需要穿毛衣。我常常去公园，因为很漂亮，天气也很舒服。春天的天气也冷一点。波士顿的公园真漂亮。春天，常常下雨。你可以穿衬衫和裤子，也可以穿一件裙子。夏天真热。你要穿衬衫和裤子。夏天，我常常打球和去公园走路。你要喝多水，因为天气不好。</p>
+    </div>
+    <div class="w3-content" style="max-width:700px">
+      <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide"><p>去哪里吃饭</p></span></h5>
+      <div class="w3-row w3-center w3-card w3-padding">
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks2');">
+          <div class="w3-col s6 tablink">波士顿的饭馆</div>
+        </a>
+        <a href="javascript:void(0)" onclick="openMenu(event, 'Eat2');">
+          <div class="w3-col s6 tablink">大学的饭馆</div>
+        </a>
+        
+        <div id="Eat2" class="w3-container menu w3-padding-48 w3-card">
+          <h5>Fenway Dining Hall</h5>
+          <p class="w3-text-grey">可是如果我不要吃日本菜，我跟我的朋友去Fenway Campus。不但有很好吃的面，而且他的饼干甜甜的，也很好吃。</p><br>
+
+          <h5>Marcianos</h5>
+          <p class="w3-text-grey">可是如果天气很冷我不喜欢去Fenway。我有的时候去Marciano’s，因为Marciano’s 的早饭很好吃。</p><br>
+        </div>
+        <div id="Drinks2" class="w3-container menu w3-padding-48 w3-card">
+          <h5>Kenzoku Mazesoba</h5>
+          <p class="w3-text-grey">我常常去Kenzoku Mazesoba因为不太贵。他的炒面和米饭很好吃。我喜欢日本菜，所以我秋天常常去Kenzoku Mazesoba吃饭。</p><br>
+
+          <h5>Shabu-Zen</h5>
+          <p class="w3-text-grey">我也喜欢Shabu Zen，他的饭不太辣。</p><br>
+        </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="toknow" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">健康</span></h5>
+    <p><span class="w3-tag">FYI!</span> 有的时候你会生病，那时候最好你吃药，也多睡觉吧。可是如果病得很重，就去SHS或者医院，因为那儿的医生都很好。我可以帮你打电话给医生。你有没有健康保险？如果你没有健康保险，看病就太贵了！医生会把药给你。看病以后，你去药店拿药。波士顿的药店在Commonwealth Avenue，叫CVS。每年秋天，你可以去药店或者医生办公室打针吧。</p>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
